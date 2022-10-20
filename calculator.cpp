@@ -47,7 +47,13 @@ int main() {
     prompt();
     char continueSelected;
     cout << "Continue (y/n)? "<<endl;
-    cin >> continueSelected;
+    cin >> continueSelected; 
+
+    /*
+    Continously asking the user if he/she wants to continue,
+    If yes Prompt again else Terminate the program!
+    */
+   
     while (continueSelected == 'y') prompt();
     return 0;
 }
