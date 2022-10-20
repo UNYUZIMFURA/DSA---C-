@@ -1,4 +1,4 @@
-/.vscode
-/calculator
-/addTwoNumber
-/swapper
+*
+!*.cpp
+!*/
+!.gitignore
