@@ -3,7 +3,7 @@
 
 using namespace std;
 void prompt() {
-int choice;
+    int choice;
     int num1, num2;
     int answer;
 
@@ -36,18 +36,18 @@ int choice;
         break;
 
         default: 
-        cout<<"Enter the correct operation";
+        cout << "Enter the correct operation";
         break;
     }
 
     cout << "Result: "<< answer << endl;
 }
+
 int main() {
-    int continueSelected;
     prompt();
-    cout << "Continue? (y/n)" << endl;
+    char continueSelected;
+    cout << "Continue (y/n)? "<<endl;
     cin >> continueSelected;
-    if(continueSelected == 'y') prompt();
-    else cout<<"Wow"<<endl;
+    while (continueSelected == 'y') prompt();
     return 0;
 }
