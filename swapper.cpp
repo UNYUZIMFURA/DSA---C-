@@ -6,6 +6,7 @@ int swappNumbers(int firstNumber, int secondNumber) {
  firstNumber = secondNumber;
  cout<<"After swapping the 1st number is "<<firstNumber<<endl;
  cout<<"After swapping the 2nd number is "<<tempVariable<<endl;
+ return 0;
 }
 
 int main() {
