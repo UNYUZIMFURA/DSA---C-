@@ -47,7 +47,7 @@ int main() {
     prompt();
     cout << "Continue? (y/n)" << endl;
     cin >> continueSelected;
-    if(continueSelected) prompt();
+    if(continueSelected == 'y') prompt();
     else cout<<"Wow"<<endl;
     return 0;
 }
