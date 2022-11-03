@@ -13,6 +13,6 @@ return count;
 }
 
 int main() {
-    cout<<countOnes(9)<<endl;
+    cout<<countOnes(15)<<endl;
     return 0;
 }
