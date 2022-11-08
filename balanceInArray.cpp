@@ -6,6 +6,7 @@ int isBalanced(int a[], int len)
     int count = 0;
     int found = 0;
     int foundMatch[len] = {};
+
     for (int i = 0; i < len; i++)
     {
         for (int j = 1; j < len; j++)
@@ -14,13 +15,13 @@ int isBalanced(int a[], int len)
             {
                 foundMatch[found] = a[i];
                 foundMatch[found + 1] = a[j];
-                cout<<"Push"<<a[i]<<a[j]<<endl;
+                found += 1;
             }
         }
     }
+
     for (int k = 0; k < len; k++)
     {
-        cout<<foundMatch[k]<<endl;
         if (foundMatch[k] != 0)
         {
             count += 1;
@@ -29,17 +30,21 @@ int isBalanced(int a[], int len)
 
     if (count == len)
     {
-      cout<<"Balanced"<<endl;
+      cout<<"The array is balanced"<<endl;
+      return 1;
     }
-    else {
-        cout<<"Unbalanced"<<endl;
-    }
+    
+    cout<<"The array is unbalanced"<<endl;
     return 0;
 }
 
 int main()
 {
     int arr[] = {-2, 2, 3, -3};
-    isBalanced(arr, 4);
+    cout<<isBalanced(arr, 4)<<endl;
     return 0;
 }
+
+/*
+Author: UNYUZIMFURA Kevin
+*/
